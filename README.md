@@ -19,9 +19,11 @@ After install we will check installation
 	(The expected result should be v0.12.x or upper)
 
 Next package necesary is npm
+
 	> sudo apt-get install npm
 
 When npm was installed and exists some authentication problem using https, it will be necesary set registry without https
+
 	> sudo npm config set registry http://registry.npmjs.org/
 
 # Installing components and applications
@@ -31,16 +33,19 @@ First clone the git repository in someone directory (example: /home/pi/test)
 	> git clone https://github.com/jomifm/raspi-gyro
 	
 Download modules for node from npm registry
+
 	> cd raspi-gyro
 	> npm install socket.io ip node-static
 	
 # Testing
 
 Start server application in "Raspberry Pi"
+
 	> cd /home/pi/raspi-gyro
 	> node server.js
 	
 Start web browser in mobile device. Set address and port to the Raspberry Pi address on your network
+
 	http://192.168.1.11:8080
 
 
